@@ -1,0 +1,25 @@
+.list, .brand{
+    list-style: none;
+    margin: 0;
+    padding: 10px;;
+    color: #fff;
+
+}
+.caption{
+    color: #fff;
+    font-style: italic;
+}
+.footer{
+    background-color: #001540;
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}

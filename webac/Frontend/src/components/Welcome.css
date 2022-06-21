@@ -1,0 +1,28 @@
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.h1, .h4, .h3{
+    text-align: center;
+    color: #fff;
+}
+.h3{
+    padding-top: 40px;
+}
+.h4{
+    font-style: italic;
+}
+.footer{
+    width: 100%;
+    position: absolute;
+}
+.login-register{
+    display: flex;
+    justify-content: center;
+}
+.btn-login, .btn-register{
+    margin-right: 10px;
+    margin-left: 10px;
+}
