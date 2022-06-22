@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
+import {Link} from "react-router-dom"
 import { Container, Row, Col, Form, Button, Nav, Navbar } from "react-bootstrap";
 import organization from "../assets/images/organization.jpg";
 import Logo from "../assets/images/logo-webac.png";
@@ -18,8 +19,7 @@ const LoginOrganization = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                     <Nav className="nav">
-                        <Nav.Link href="#deets">Content</Nav.Link>
-                        <Nav.Link href="#deets">Profile</Nav.Link>   
+                        <Nav.Link href="/">Welcome</Nav.Link> 
                     </Nav>
                 </Navbar.Collapse>
             </Container>
@@ -52,12 +52,14 @@ const LoginOrganization = () => {
                             <Form.Control type="password" placeholder="Password" />
                         </Form.Group>
                     </Form.Group>
+                        <Link to="/content">
                         <Button variant="primary" type="submit" className="button">
                             Login
                         </Button>
+                        </Link>
                     </Form>
                     <p className="p">
-                        Belum punya akun?   <a href="/login-peserta">Registrasi</a>
+                        Belum punya akun?   <a href="/register-organization">Registrasi</a>
                     </p>
                 </div>
                 </Col>

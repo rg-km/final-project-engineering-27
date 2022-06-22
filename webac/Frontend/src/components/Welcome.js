@@ -2,6 +2,7 @@ import { Navbar, Container, Nav,} from "react-bootstrap";
 import './Welcome.css'
 import Logo from "../assets/images/logo-webac.png"
 import Footer from "./Footer";
+import {Link} from "react-router-dom"
 
 const Welcome = () => {
     return (
@@ -15,8 +16,8 @@ const Welcome = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                 <Nav>
-                    <Nav.Link href="#deets">Home</Nav.Link>
-                    <Nav.Link href="#deets">Profile</Nav.Link>   
+                    <Nav.Link href="/peserta">Peserta</Nav.Link>
+                    <Nav.Link href="/organization">Organization</Nav.Link>   
                 </Nav>
             </Navbar.Collapse>
         </Container>
@@ -38,8 +39,8 @@ const Welcome = () => {
                 LOGIN / REGISTER
             </h3>
             <div className="login-register">
-                <button className="btn btn-login btn-primary ">ORGANIZATION</button>
-                <button className="btn btn-register btn-primary ">PESERTA</button>
+                <Link to="/login-organization"><button className="btn-login btn-primary">ORGANIZATION</button></Link>
+                <Link to="/login-peserta"><button className="btn-register btn-primary">PESERTA</button></Link>
             </div>
     </Container>
         </div>

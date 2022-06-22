@@ -19,8 +19,7 @@ const RegisterPeserta = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                     <Nav>
-                        <Nav.Link href="#deets">Home</Nav.Link>
-                        <Nav.Link href="#deets">Profile</Nav.Link>   
+                        <Nav.Link href="/">Welcome</Nav.Link> 
                     </Nav>
                 </Navbar.Collapse>
             </Container>

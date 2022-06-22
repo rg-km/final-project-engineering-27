@@ -18,8 +18,7 @@ const RegisterOrganization = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                     <Nav className="nav">
-                        <Nav.Link href="#deets">Content</Nav.Link>
-                        <Nav.Link href="#deets">Profile</Nav.Link>   
+                        <Nav.Link href="/">Welcome</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
@@ -63,7 +62,7 @@ const RegisterOrganization = () => {
                     </Button>
                 </Form>
                     <p className="p">
-                        Sudah punya akun?   <a href="/login-peserta">Login</a>
+                        Sudah punya akun?   <a href="/login-organization">Login</a>
                     </p>
                 </div>
                 </Col>

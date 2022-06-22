@@ -24,6 +24,6 @@
     justify-content: center;
 }
 .btn-login, .btn-register{
-    margin-right: 10px;
-    margin-left: 10px;
+    background-color: aqua;
+    margin: 10px;
 }
