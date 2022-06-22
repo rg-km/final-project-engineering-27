@@ -1,5 +1,6 @@
 import React from "react";
 import {Container, Row, Col, Card, Button} from "react-bootstrap";
+import {Link} from "react-router-dom"
 import NavigationPeserta from "./NavigationPeserta";
 import './Home.css'
 import Footer from "./Footer";
@@ -46,9 +47,11 @@ const Home = () => {
                                     <Card.Title>{item.title}</Card.Title>
                                     <Card.Text>{item.text}</Card.Text>
                                 </Card.Body>
+                                <Link to="/detail">
                                 <Button className="btn" href={item.link}>
                                     Read More
                                 </Button>
+                                </Link>
                                 <Card.Footer>
                                     <small className="text-muted">{item.time}</small>
                                 </Card.Footer>

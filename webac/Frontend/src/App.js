@@ -8,41 +8,26 @@ import RegisterOrganization from './components/RegisterOrganization';
 import Content from './components/Content';
 import Riwayat from './components/Riwayat';
 import ProfilePeserta from './components/ProfilePeserta';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+
 
 function App() {
   return (
-    <div>
-      {/* <div className="welcome">
-        <Welcome />
-      </div> */}
-      {/* <div className="home">
-        <Home />
-      </div> */}
-      {/* <div className="content">
-        <Content />
-      </div> */}
-      {/* <div className="riwayat">
-        <Riwayat />
-      </div> */}
-      <div className="ProfilePeserta">
-        <ProfilePeserta />
-      </div>
-      {/* <div className="profile-peserta">
-        <ProfilePeserta />
-      </div> */}
-      {/* <div className="login-peserta">
-        <LoginPeserta/>
-      </div> */}
-      {/* <div className="register-peserta">
-        <RegisterPeserta/>
-      </div> */}
-      {/* <div className="login-organization">
-        <LoginOrganization/>
-      </div> */}
-      {/* <div className="register-organization">
-        <RegisterOrganization/>
-      </div> */}
-    </div>
+  <BrowserRouter>
+    <Routes>
+      <Route exact path="/" element={<Welcome />}/>
+      <Route exact path="/home" element={<Home />}/>
+      <Route exact path="/peserta" element={<LoginPeserta />}/>
+      <Route exact path="/organization" element={<LoginOrganization />}/>
+      <Route exact path="/register-peserta" element={<RegisterPeserta />}/>
+      <Route exact path="/register-organization" element={<RegisterOrganization />}/>
+      <Route exact path="/login-peserta" element={<LoginPeserta />}/>
+      <Route exact path="/login-organization" element={<LoginOrganization />}/>
+      <Route exact path="/content" element={<Content />}/>
+      <Route exact path="/riwayat" element={<Riwayat />}/>
+      <Route exact path="/profile-peserta" element={<ProfilePeserta />}/>
+    </Routes>
+  </BrowserRouter>
   );
 }
 
