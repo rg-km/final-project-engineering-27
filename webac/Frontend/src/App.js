@@ -12,18 +12,21 @@ import ProfilePeserta from './components/ProfilePeserta';
 function App() {
   return (
     <div>
-      {/* <div className="app">
+      {/* <div className="welcome">
         <Welcome />
       </div> */}
-      <div className="home">
+      {/* <div className="home">
         <Home />
-      </div>
+      </div> */}
       {/* <div className="content">
         <Content />
       </div> */}
       {/* <div className="riwayat">
         <Riwayat />
       </div> */}
+      <div className="ProfilePeserta">
+        <ProfilePeserta />
+      </div>
       {/* <div className="profile-peserta">
         <ProfilePeserta />
       </div> */}
