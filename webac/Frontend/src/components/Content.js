@@ -16,12 +16,14 @@ const Content = () => {
                 title: "Seminar Nasional",
                 image: gambar1,
                 text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                link: "https://www.google.com"
             },
             {
                 id: 2,
                 title: "Technopreneurship",
                 image: gambar2,
                 text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                link: "https://www.google.com"
             }
         ])});
     return (
@@ -43,6 +45,7 @@ const Content = () => {
                                 <Card.Body>
                                     <Card.Title>{item.title}</Card.Title>
                                     <Card.Text>{item.text}</Card.Text>
+                                    <Card.Text>Link: <span className="link-content">{item.link}</span></Card.Text>
                                 </Card.Body>
                                 <Button className="btn" href="">Edit</Button>
                                 <Button className="btn" href="">Delete</Button>
@@ -51,6 +54,9 @@ const Content = () => {
                     )
                 })}
             </Row>
+                <Button href="/add-content" className="btn-content">
+                    Buat Content Baru
+                </Button>
         </Container>
         {/* End Content */}
 
