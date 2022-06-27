@@ -1,5 +1,4 @@
 import { Navbar, Container, Nav,} from "react-bootstrap";
-import './Welcome.css'
 import Logo from "../assets/images/logo-webac.png"
 import Footer from "./Footer";
 import {Link} from "react-router-dom"
@@ -27,7 +26,7 @@ const Welcome = () => {
     {/* Welcome Start */}
         <div className="welcome">
     <Container className="p-5">
-            <img src={Logo} width="300" height="300" className="logo" alt=""></img>
+            <img src={Logo} width="300" height="300" className="logo1" alt=""></img>
             <h1 className="h1">
                 WEBINAR ACADEMY
             </h1>

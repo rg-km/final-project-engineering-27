@@ -1,42 +1,4 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
+/* halaman welcome */
 .welcome{
   background: url("./assets/images/background.jpg");
   background-size: cover;
@@ -44,3 +6,310 @@
   height: 100%;
   justify-content: center;
 }
+.logo1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 530px;
+  height: 400px;
+  background: transparent;
+}
+.h1, .h4, .h3{
+  text-align: center;
+  color: #fff;
+}
+.h3{
+  padding-top: 40px;
+}
+.h4{
+  font-style: italic;
+}
+.footer{
+  width: 100%;
+  position: absolute;
+}
+.login-register{
+  display: flex;
+  justify-content: center;
+}
+.btn-login, .btn-register{
+  background-color: aqua;
+  margin: 10px;
+  width: 300px;
+  
+}
+/* end welcome */
+
+/* halaman Register Peserta */
+.form-register{
+  width: 100%;
+  max-width: 500px;
+  margin:  auto;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.header{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.button{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #00bcd4;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.row{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.p{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  color: black;
+}
+/* end register peserta */
+
+/* halaman login Peserta */
+.form-register{
+  width: 100%;
+  max-width: 500px;
+  margin:  auto;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.header{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.button{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #00bcd4;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.row{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.p{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  color: black;
+}
+/* end login peserta */
+
+/* halaman Register organization */
+.form-register{
+  width: 100%;
+  max-width: 500px;
+  margin:  auto;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.header{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.button{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #00bcd4;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.row{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.p{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  color: black;
+}
+/* end register organization */
+
+/* halaman login organization */
+.form-login{
+  width: 100%;
+  max-width: 500px;
+  margin:  auto;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.header{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.button{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #00bcd4;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.row{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.p{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  color: black;
+}
+/* end login organization */
+
+/* halaman home */
+.content{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+.card-content{
+  padding: 10px;
+}
+.btn{
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #00bcd4;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.by{
+  font-style: italic;
+  text-align: end;
+}
+.time{
+  text-align: end;
+}
+/* end home */
+
+/* halaman Content */
+.content{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* end Content */
+
+/* halaman Detail Content */
+.detail{
+  padding: 20px;
+}
+.image-detail{
+  margin: 10px;
+}
+.body-detail{
+  margin: 10px;
+}
+/* end Detail Content */
+
+/* halaman Add Content */
+.add-content{
+  padding: 20px;
+}
+.card-add{
+  padding: 10px;
+}
+h3{
+  text-align: center;
+  padding: 10px;
+}
+/* end Add Content */
+
+/* halaman Profile Organization */
+.organization{
+  padding: 20px;
+}
+.image-organization{
+  padding: 20px;
+  width: 150px;
+  height: 500px;
+}
+.body-organization{
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: large;
+}
+.h1-profile{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.text{
+  margin-top: 60px;
+}
+.btn-organization{
+  margin-top: 29%;
+}
+/* end Profile Organization */
+
+/* halaman Profile Peserta */
+.peserta{
+  padding: 20px;
+}
+.image-peserta{
+  padding: 20px;
+  width: 150px;
+  height: 500px;
+}
+.body-peserta{
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: large;
+}
+.text{
+  margin-top: 60px;
+}
+.btn-peserta{
+  margin-top: 29%;
+}
+/* end Profile Peserta */
+
+/* halaman Riwayat  */
+.riwayat{
+  padding: 20px;
+}
+.card-riwayat{
+  margin: 2px;
+}
+.image-riwayat{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.body-riwayat{
+  margin: 10px;
+}
+.h1-riwayat{
+  text-align: center;
+}
+/* end Riwayat */
