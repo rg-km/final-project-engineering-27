@@ -9,6 +9,10 @@ import Content from './components/Content';
 import Riwayat from './components/Riwayat';
 import ProfilePeserta from './components/ProfilePeserta';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import ProfileOrganization from './components/ProfileOrganization';
+import DetailContent from './components/DetailContent';
+import AddContent from './components/AddContent';
+
 
 
 function App() {
@@ -26,6 +30,9 @@ function App() {
       <Route exact path="/content" element={<Content />}/>
       <Route exact path="/riwayat" element={<Riwayat />}/>
       <Route exact path="/profile-peserta" element={<ProfilePeserta />}/>
+      <Route exact path="/profile-organization" element={<ProfileOrganization />}/>
+      <Route exact path="/add-content" element={<AddContent />}/>
+      <Route exact path="/detail-content" element={<DetailContent />}/>
     </Routes>
   </BrowserRouter>
   );

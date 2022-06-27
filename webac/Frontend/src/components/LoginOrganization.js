@@ -4,7 +4,6 @@ import {Link} from "react-router-dom"
 import { Container, Row, Col, Form, Button, Nav, Navbar } from "react-bootstrap";
 import organization from "../assets/images/organization.jpg";
 import Logo from "../assets/images/logo-webac.png";
-import './LoginOrganization.css'
 
 const LoginOrganization = () => {
     return (

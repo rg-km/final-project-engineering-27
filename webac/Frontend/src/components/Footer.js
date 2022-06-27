@@ -3,6 +3,7 @@ import { Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
 import './Footer.css'
 import Logo from "../assets/images/logo-webac.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faInstagram, faTelegram, faTwitter, faFacebook,faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 
 
 const Footer = () => {
@@ -19,7 +20,16 @@ const Footer = () => {
                 <p className='caption'>
                     Wujudkan acaramu bersama kami!
                 </p>
+                <FontAwesomeIcon icon={faInstagram} width="30" height="30" />
+                <FontAwesomeIcon icon={faFacebook} width="30" height="30" />
+                <FontAwesomeIcon icon={faTelegram} width="30" height="30" />
+                <FontAwesomeIcon icon={faTwitter} width="30" height="30" />
+                <FontAwesomeIcon icon={faWhatsapp} width="30" height="30" />
             </Col>
+
+            <Col md={1}>
+            </Col>
+
             <Col>
             <div className='list'>
                     <h5>
@@ -50,10 +60,13 @@ const Footer = () => {
                     </h5>
                     <ul>
                         <li>Profile</li>
-                        <li>content</li>
+                        <li>Content</li>
                     </ul>
                 </div>
             </Col>
+            <p>
+                Copyright@2022
+            </p>
         </Row>
     </>
   )

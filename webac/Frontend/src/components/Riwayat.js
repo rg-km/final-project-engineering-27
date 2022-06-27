@@ -1,26 +1,41 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import NavigationPeserta from "./NavigationPeserta";
 import Footer from "./Footer";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import gambar1 from "../assets/images/seminar-nasional.jpg";
 import gambar2 from "../assets/images/technopreneurship.jpg";
 
-const item = [
-    {
-        id: 1,
-        title: "Seminar Nasional",
-        image: gambar1,
-        waktu: "dilaksanakan pada tanggal 4 juli 2020"
-    },
-    {
-        id: 2,
-        title: "Technopreneurship",
-        image: gambar2,
-        waktu: "dilaksanakan pada tanggal 2 juli 2020"
-    }
-]
 
 const Riwayat = () => {
+    const [item, setItem] = useState([]);
+    useEffect(() => {
+        setItem([
+            {
+                id: 1,
+                title: "Seminar Nasional",
+                image: gambar1,
+                waktu: "dilaksanakan pada tanggal 4 juli 2020"
+            },
+            {
+                id: 2,
+                title: "Technopreneurship",
+                image: gambar2,
+                waktu: "dilaksanakan pada tanggal 2 juli 2020"
+            },
+            {
+                id: 1,
+                title: "Seminar Nasional",
+                image: gambar1,
+                waktu: "dilaksanakan pada tanggal 4 juli 2020"
+            },
+            {
+                id: 2,
+                title: "Technopreneurship",
+                image: gambar2,
+                waktu: "dilaksanakan pada tanggal 2 juli 2020"
+            }
+        ])});
+
     return (
         <>
         {/* Start Navigation */}
@@ -30,28 +45,36 @@ const Riwayat = () => {
         {/* End Navigation */}
 
         {/* Start Content */}
-        <Container>
-            <div className="content">
-            {item.map((item) => {
-                        return (
+        <div className="riwayat">
+            <Container>
+                <h1 className="h1-riwayat">
+                    RIWAYAT
+                </h1>
+                {item.map((item) => {
+                return (
+                    <Row>
+                        <Card className="card-riwayat">
                             <Row>
-                                <Card>
-                                <Col md={3}>
-                                    <Card.Img variant="top" src={item.image} />
+                                <Col className="img-riwayat" md={1}>
+                                    <Card.Img src={item.image} className="image-riwayat"></Card.Img>
                                 </Col>
-                                <Col md={9}>
-                                        <Card.Body className="card-content">
-                                            <Card.Title>{item.title}</Card.Title>
-                                            <Card.Text>{item.waktu}</Card.Text>
-                                        </Card.Body>
+                                <Col className="body-riwayat" md={6}>
+                                    <Card.Body>
+                                        <Card.Title>
+                                            {item.title}
+                                        </Card.Title>
+                                        <Card.Text>
+                                            {item.waktu}
+                                        </Card.Text>
+                                    </Card.Body>
                                 </Col>
-                                </Card>
                             </Row>
-                        )
-                    }
-                )}
-            </div>
-        </Container>
+                        </Card>
+                    </Row>
+                );
+                })}
+            </Container>
+        </div>
         {/* End Content */}
 
         {/* Start Footer */}

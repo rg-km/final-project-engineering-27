@@ -11,6 +11,9 @@
 }
 .footer{
     background-color: #001540;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 100%;
 }
 .logo{
     display: block;

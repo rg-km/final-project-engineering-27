@@ -3,7 +3,6 @@ import Footer from "../components/Footer";
 import { Container, Row, Col, Form, Button, Nav, Navbar } from "react-bootstrap";
 import organization from "../assets/images/organization.jpg";
 import Logo from "../assets/images/logo-webac.png";
-import './RegisterOrganization.css'
 
 const RegisterOrganization = () => {
     return (
@@ -57,7 +56,7 @@ const RegisterOrganization = () => {
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="Password" />
                     </Form.Group>
-                    <Button variant="primary" type="submit" className="button">
+                    <Button variant="primary" href="/content" type="submit" className="button">
                         Register
                     </Button>
                 </Form>

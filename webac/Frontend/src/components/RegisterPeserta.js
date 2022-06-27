@@ -3,7 +3,6 @@ import NavigationPeserta from "./NavigationPeserta";
 import Footer from "./Footer";
 import { Container, Row, Col, Form, Button, Nav, Navbar } from "react-bootstrap";
 import Peserta from "../assets/images/peserta.jpg";
-import './RegisterPeserta.css'
 import Logo from "../assets/images/logo-webac.png";
 
 const RegisterPeserta = () => {
@@ -64,7 +63,7 @@ const RegisterPeserta = () => {
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="Password" />
                     </Form.Group>
-                    <Button variant="primary" type="submit" className="button">
+                    <Button variant="primary" href="/home" type="submit" className="button">
                         Register
                     </Button>
                 </Form>

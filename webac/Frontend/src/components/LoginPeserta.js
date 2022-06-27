@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 import { Container, Row, Col, Form, Button, Nav, Navbar } from "react-bootstrap";
 import Peserta from "../assets/images/peserta.jpg";
 import Logo from "../assets/images/logo-webac.png";
-import './LoginPeserta.css'
+
 
 const LoginPeserta = () => {
     return (
